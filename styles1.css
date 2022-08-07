@@ -1,0 +1,267 @@
+:root {
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    background-color: #ffffff;
+
+}
+body {
+    margin: 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd; 
+    justify-content: center;
+}
+.page-container {
+    margin-bottom: 70px;
+
+}
+.nav {
+
+}
+nav {
+    background-color: #222222;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 56px;
+    height: 56px;
+    padding: 8px;
+    border-radius: 50%;
+}
+nav .logo .title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: flex-start;
+    list-style: none;
+    
+}
+nav ul li {
+    color: white;
+    background-color: #333333;
+    padding: 22px 40px;
+}
+nav ul li:hover {
+    
+    background-color:#222222
+ 
+}
+
+nav ul li.active {
+    background-color: #222222;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+
+  
+}
+
+/* tablets */
+@media all and (max-width: 800px){
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+    .subtext {
+        flex-direction: column;
+    }
+
+
+}
+
+/* phones */
+@media all and (max-width: 600px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    nav ul {
+        display: block;
+        
+        
+
+    }
+    nav ul li {
+        /* width: auto; */
+        float: left;
+        padding: 10px;
+    }  
+    .subtext {
+        flex-direction: column;
+    }
+
+   
+    
+}
+
+/* small phones */
+@media all and (max-width: 350px){
+    nav {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    nav ul {
+        display: block;
+        
+        
+
+    }
+    nav ul li {
+        /* width: auto; */
+        float: left;
+        padding: 5px;
+    }  
+
+    .subtext {
+        flex-direction: column;
+    }
+
+    
+    
+}
+
+/* .bannerMain {
+    margin: 0;
+    display: flex;
+    align-content: center;
+} */
+
+.banner {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    /* left: 20vw; */
+    width: 100vw;
+    height: 400px;
+    background-color: #333333;
+    background-image: url(https://unsplash.it/900/450/?blur);
+    text-align: center;
+    background-size: cover; 
+    justify-content: center;
+    align-content: center;
+
+}
+
+.banner h1 {
+    position: relative;
+    /* top: 5vw; */
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    animation: appear 3s ease forwards;
+    margin: 5px;
+    padding: 15px;
+    
+}
+
+.banner p {
+    position: relative;
+    /* top: 5.5vw; */
+    color: white;
+    font-size: 1.5em;
+    animation: appear 3s ease forwards;
+    margin: 5px;
+    padding: 15px;
+    
+
+}
+@keyframes appear {
+    from {
+        opacity: 0.0;
+        top: -100px;
+    }
+    to {
+        opacity: 1;
+        top: 0.0;
+    }
+}
+
+.maintext {
+    display: flex;    
+    
+    justify-content: center;
+    /* background-color: aqua; */
+
+}
+
+.maintext h2 {
+    width: 70vw;
+    
+    margin: 5px;
+    padding: 15px;
+    text-align: center;
+    /* background-color: lightgray; */
+    
+}
+
+.subtext {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    color: white;
+    
+   
+
+
+}
+
+.subtext .red {
+    margin: 20px;
+    padding: 30px;
+    background-color: #ff6363;
+    border-radius: 20px;
+    /* width: 30vw; */
+
+}
+.subtext .yellow {
+    
+    margin: 20px;
+    padding: 30px;
+    background-color: #f0a500;
+    border-radius: 20px;
+    /* width: 30vw; */
+}
+.subtext .green {
+    margin: 20px;
+    padding: 30px;
+    background-color: #1eb2a6;
+    border-radius: 20px;
+    /* width: 30vw; */
+}
+
+.footer {
+    position:fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #222222;
+    color: white;
+    font-size: medium;
+    padding: 24px;
+    text-align: center;
+}
