@@ -80,80 +80,7 @@ nav ul li a {
 
 }
 
-/* tablets */
-@media all and (max-width: 800px) {
-    nav {
-        justify-content: center;
-    }
 
-    nav ul {
-        justify-content: space-between;
-    }
-
-    /* .subtext {
-        flex-direction: column;
-    } */
-
-
-}
-
-/* phones */
-@media all and (max-width: 600px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    nav ul {
-        display: block;
-
-
-
-    }
-
-    nav ul li {
-        /* width: auto; */
-        float: left;
-        padding: 10px;
-    }
-
-    .subtext {
-        flex-direction: column;
-    }
-
-
-
-}
-
-/* small phones */
-@media all and (max-width: 350px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-
-    }
-
-    nav ul {
-        display: block;
-
-
-
-    }
-
-    nav ul li {
-        /* width: auto; */
-        float: left;
-        padding: 5px;
-    }
-
-    .subtext {
-        flex-direction: column;
-    }
-
-
-
-}
 
 /* .bannerMain {
     margin: 0;
@@ -230,12 +157,18 @@ nav ul li a {
     /* background-color: lightgray; */
 
 }
+.subtext-container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
 
 .subtext {
     display: flex;
     justify-content: center;
     box-sizing: border-box;
     color: white;
+    width: 1200px;
 
 
 
@@ -299,11 +232,17 @@ nav ul li a {
 
 }
 
+.project-container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
 .projects   {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 1200px;
 
 }
 .project    {
@@ -417,6 +356,135 @@ nav ul li a {
 .gallery-item6 {
     grid-column: 4/5;
     grid-row: 3/4;
+}
+
+.contact-container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.contact-box {
+    display: flex;
+    background-color: #eeeeee;
+    padding: 20px;
+    margin: 20px;
+    width: 1200px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+#Formb {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 12px;
+}
+
+#Formb:hover {
+    background-color: #45a098;
+}
+form{
+    flex: 1;
+}
+
+.maps {
+    padding: 5px;
+    margin-left: 20px;
+   flex: 1;
+}
+
+/* tablets */
+@media all and (max-width: 800px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+
+    /* .subtext {
+        flex-direction: column;
+    } */
+
+
+}
+
+/* phones */
+@media all and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    nav ul {
+        display: block;
+
+
+
+    }
+
+    nav ul li {
+        /* width: auto; */
+        float: left;
+        padding: 10px;
+    }
+
+    .subtext {
+        flex-direction: column;
+    }
+
+    .contact-box {
+        flex-direction: column;
+
+    }
+    .maps{
+        margin: 0px;
+    }
+
+
+}
+
+/* small phones */
+@media all and (max-width: 350px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    nav ul {
+        display: block;
+
+
+
+    }
+
+    nav ul li {
+        /* width: auto; */
+        float: left;
+        padding: 5px;
+    }
+
+    .subtext {
+        flex-direction: column;
+    }
+
+
+
 }
 .footer {
     position: fixed;
